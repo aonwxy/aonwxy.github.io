@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #second {
+      position: fixed;
+      /*设置元素为固定定位*/
+      top: 30px;
+      /*距离浏览器顶部30px*/
+
+      /*距离浏览器左部160px*/
+      width: 100%;
+      height: auto;
+
+    }
+
+    .kuang {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* z-index: -10; */
+      background-image: linear-gradient(180deg, rgb(50, 97, 228), rgb(78, 168, 241));
+
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 70%;
+      border: 2px solid #fff;
+      box-shadow: inset 0 0 8px #fff;
+      animation: flutter 10s infinite;
+      opacity: 0;
+    }
+
+    @keyframes flutter {
+      100% {
+        transform: translateX(-50px);
+        bottom: 100px;
+        opacity: 1.5;
+      }
+
+      50% {
+        transform: translateX(100px);
+        opacity: 1.6;
+      }
+
+
+      10% {
+        transform: translateX(5px);
+        bottom: 100%;
+        opacity: 0;
+
+      }
+    }
+
+    .bubble:nth-child(1) {
+      left: 10%;
+      width: 40px;
+      height: 40px;
+      animation-duration: 9s;
+      animation-delay: 0.1s;
+    }
+
+    .bubble:nth-child(2) {
+      left: 15%;
+      width: 40px;
+      height: 40px;
+      animation-duration: 6s;
+      animation-delay: 1.5s;
+
+    }
+
+    .bubble:nth-child(3) {
+      left: 20%;
+      width: 40px;
+      height: 40px;
+      animation-duration: 10s;
+
+
+
+    }
+
+    .bubble:nth-child(4) {
+      left: 30%;
+      width: 35px;
+      height: 35px;
+      animation-duration: 5.5s;
+      animation-delay: 1.5s;
+
+    }
+
+    .bubble:nth-child(5) {
+      left: 40%;
+      width: 50px;
+      height: 50px;
+      animation-duration: 12s;
+
+
+
+    }
+
+    .bubble:nth-child(6) {
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      animation-duration: 6s;
+      animation-delay: 1s;
+
+    }
+
+    .bubble:nth-child(7) {
+      left: 60%;
+      width: 40px;
+      height: 40px;
+      animation-duration: 8s;
+      animation-delay: 1s;
+
+    }
+
+    .bubble:nth-child(8) {
+      left: 65%;
+      width: 40px;
+      height: 40px;
+      animation-duration: 15s;
+
+    }
+
+    .bubble:nth-child(9) {
+      left: 80%;
+      width: 55px;
+      height: 55px;
+      animation-duration: 9s;
+      animation-delay: 0.5s;
+
+    }
+
+    .bubble:nth-child(10) {
+      left: 85%;
+      width: 40px;
+      height: 40px;
+      animation-duration: 12s;
+      animation-delay: 0.5s;
+
+
+    }
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+
+    }
+
+    #border-btn {
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+
+      top: 70%;
+      left: 45%;
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      background: #2ec4b6;
+      text-transform: uppercase;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 40px 80px;
+      outline: none;
+      position: relative;
+      transition: border-radius 1.2s;
+      -webkit-transition: border-radius 1s;
+    }
+
+    button:hover {
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="kuang">
+    <div id="second"><img src="top.png" alt=""></div>
+    <div class="bubble"><img src="red1.png"></div>
+    <div class="bubble"><img src="red2.png"></div>
+    <div class="bubble"><img src="red3.png"></div>
+    <div class="bubble"><img src="red4.png"></div>
+    <div class="bubble"><img src="red5.png"></div>
+    <div class="bubble"><img src="red6.png"></div>
+    <div class="bubble"><img src="red7.png"></div>
+    <div class="bubble"><img src="red8.png"></div>
+    <div class="bubble"><img src="red9.png"></div>
+    <!-- <div class="bubble"><img src="red10.png"></div> -->
+    <div id="border-btn">
+      <button>点击开始我的东奥之旅</button>
+    </div>
+
+
+    <div class="snow-container"></div>`
+
+  </div>
+
+</body>
+
+</html>
